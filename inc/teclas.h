@@ -6,9 +6,9 @@
 enum estadoMEF {UP, DOWN, FALLING, RISING};
 
 struct Tecla_t {
-gpioMap_t tecla;
-delay_t delay;
-enum estadoMEF estado;
+	gpioMap_t tecla;
+	delay_t delay;
+	enum estadoMEF estado;
 };
 
 void inicializarMEF(struct Tecla_t *tecla, gpioMap_t pin);
