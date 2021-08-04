@@ -1,6 +1,29 @@
+/** @file secuencias.c
+ *  @brief Archivo con definiciones de funciones para el
+ *  módulo de secuencias de LEDs para la placa EDU-CIAA
+ *
+ *  @author Gonzalo N. Vaca <vacagonzalo@gmail.com>
+ *  @author Luis I. Minchala <ismael.minchala@ucuenca.edu.ec>
+ */
+
 #include "secuencias.h"
 #include "led.h"
 
+/** @brief Actualiza el valor de la variable que controla el led que
+ * se activa en la secuencia (incrementa su valor si el sentido es
+ * ascendente, de lo contrario lo decrementa).
+ *
+ * Esta función actualiza el valor de la variable que controla el
+ * apuntador de los arreglos de leds y tiempos, una vez que se ha
+ * ha encendido el led por el tiempo correspondiente. La variable que
+ * define la orientación del barrido de los leds determina si el valor
+ * del apuntador increta o decrementa su valor.
+ *
+ *  @param sec es un puntero que pasa por referencia el arreglo
+ *  de leds, la posición más reciente de la secuencia, el sentido de
+ *  la secuencia, los tiempos de encendido de cada led y la definición
+ *  de una estructura de tiempo para el uso de un retardo no bloquente.
+ */
 void actualizarPosicion(struct Secuencia_t *sec);
 
 void activarSecuencia(struct Secuencia_t *psecuencia, gpioMap_t *leds, tick_t *tiempos, int8_t cuenta)
