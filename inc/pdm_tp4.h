@@ -1,5 +1,6 @@
 /*=============================================================================
  * Author: Gonzalo Nahuel Vaca <vacagonzalo@gmail.com>
+ *         Luis I. Minchala <ismael.minchala@ucuenca.edu.ec>
  * Date: 2021/07/30
  * Version: 1
  *===========================================================================*/
